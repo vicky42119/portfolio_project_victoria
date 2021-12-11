@@ -11,15 +11,20 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
+ 
+
 
 html {
-  color: #222;
+  color: rgb(44, 44, 44);
   font-size: 1em;
   line-height: 1.4;
   padding:1.5rem;
-  background-color:rgb(247, 183, 183);
+  background-color:rgb(53, 53, 53);
+  
 }
+
 
 ul {
   list-style: none;
@@ -27,34 +32,51 @@ ul {
 
 figure {
   padding:0;
-  margin:0;
+  margin: 10px;;
 }
 
 /* unvisited link */
 a:link {
-  color: #000;
+  color: rgb(255, 255, 255);
   font-family: 'Source Sans Pro', sans-serif;
 
 }
 
 /* visited link */
 a:visited {
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: rgb(0, 122, 75);
   text-decoration: none;
 }
 
 /* selected link */
 a:active {
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 
+body {
+width: 90vw;
+background-color: rgb(180, 180, 180);
+background-size: cover;
+border-style: outset;
+border-width: 5px;
+}
+
+<style>
+body  {
+  background-image: url("image_D.jp");
+  background-color: #cccccc;
+}
+
+
+
+
 main {
-  width: 70vw;
+  width: 80vw;
   margin: 0 auto;
 }
 
@@ -64,11 +86,13 @@ main {
   grid-auto-rows:min-content;
   grid-gap:2rem;
   padding-bottom:2rem;
-  border-bottom:1px solid #dadada;
+  border-bottom:2px solid #dadada;
 }
 
 header {
   grid-column:1/6;
+  
+ 
 }
 
 .unstyled-link{
@@ -94,7 +118,7 @@ header {
   grid-auto-rows:min-content;
   grid-gap:2rem;
   padding-bottom:2rem;
-  border-bottom:1px solid #dadada;
+  
 }
 
 .project-block_section-head {
@@ -121,11 +145,11 @@ header {
 }
 
 .main-content {
-  grid-column: 2 / 3;
+  grid-column: 2/ 3;
 }
 
 .intro-block {
-  grid-column:1 / 3;
+  grid-column: 6/6;
 }
 
 .article {
@@ -137,9 +161,30 @@ header {
 /* Typography */
 
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight:500;
+h1 {
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  
+  }
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+   }
+
+
+h3, h5, h6 {
+  font-family: 'Poppins', sans-serif;;
+  font-weight:200;
   margin:0;
   padding:0;
 }
@@ -242,6 +287,7 @@ img {
 
   max-width: 100%;
   height: auto;
+  border-style: outset;
 }
 
 /*
@@ -439,4 +485,5 @@ textarea {
     page-break-after: avoid;
   }
 }
+
 
